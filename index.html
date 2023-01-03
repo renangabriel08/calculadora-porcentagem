@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="icon" href="assets/icon.png">
+    
+    <title>Calculadora de Porcentagem</title>
+</head>
+<body>
+    <section class="calculadora-tipos-porcentagem">
+
+        <div class="inicio">
+            <h2>BEM-VINDO!<br> <br>
+                Calcule diferentes tipos de porcentagem</h2>
+                <div class="botoes">
+                    <button onclick="trocaDiv(1, 2)">Porcentagem de um número</button>
+                    <button onclick="trocaDiv(1, 3)">Quanto % um número equivele</button>
+                </div>
+        </div>
+
+        <div class="calculadora-porcentagem">
+            <h1>Calculadora de porcentagem</h1>
+            
+            <div class="info-porcentagem">
+                <h2>Porcentagem: </h2>
+                <input type="number" name="porcentagem" id="porcentagem" placeholder="Digite uma porcentagem">
+            </div>
+
+            <div class="info-total">
+                <h2>Total: </h2>
+                <input type="number" name="total" id="total" placeholder="Digite um número total"> 
+            </div>
+
+            <button onclick="validarPorcentagem()">Calcular</button>
+        </div>
+
+        <div class="calculadora-equivalente">
+            <h1>Calculadora de porcentagem</h1>
+            
+            <div class="info-porcentagem">
+                <h2>Porcentagem: </h2>
+                <input type="number" name="porcentagem" id="porcentagem2" placeholder="Digite um número porcentagem">
+            </div>
+
+            <div class="info-total">
+                <h2>Total: </h2>
+                <input type="number" name="total" id="total2" placeholder="Digite um número total"> 
+            </div>
+
+            <button onclick="validarEquivalente()">Calcular</button>
+        </div>
+
+        <div class="resultado">
+            <h2>Resultado!</h2>
+            <h3 id="resultado"></h3>
+            <div class="botoes">
+                <button onclick="trocaDiv(4, 1)">Realizar outro cálculo</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="./js/main.js"></script>
+</html>
